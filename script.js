@@ -59,6 +59,18 @@ function kilogramToGram(value) {
     ans = value * (1000);
     return ans
 }
+
+//Formula sum of interior angles: (n - 2) x 180°
+function sumInteriorAngles(n) {
+    ans = (n - 2) * 180;
+    return ans
+}
+
+//Formula each angle of a polygon:
+function eachInteriorAngles(n) {
+    ans = sumInteriorAngles(n) / n;
+    return ans   
+}
 //END FUNCTION
 
 //Question 1:
@@ -101,3 +113,20 @@ console.log(ans);
 
 //Question 5
 
+//Question 7
+console.log(eachInteriorAngles(6));
+console.log(eachInteriorAngles(3));
+console.log(sumInteriorAngles(3));
+console.log(sumInteriorAngles(4));
+
+total = 360;
+c = 120;
+
+a = 120;
+g = 90;
+b = 90;
+
+formula = 360 - 90 - 90 - 120;
+ans = 60;
+
+//Question 8
